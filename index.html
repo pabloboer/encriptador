@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header></header>        
+        <main>
+            <canvas width="32" height="48" class="canvas"></canvas>
+            <div class="caja_logo">
+                <img src="Vector.png" alt="logo_alura" class="logo">
+            </div>
+            <section class="entrada">
+                <input class="texto_ingresado" placeholder="Ingrese el texto aqui..." pattern="/^[a-z]+$/"></input>
+                <p class="txt_desencriptado"></p>
+            </section>            
+            <section class = "resultado">
+                <div class="Muñeco">
+                    <img src="Muñeco.png" alt="imagen_busqueda niño con lupa" class="img_muñeco">
+                </div>
+                <div class="txt_resultado">   
+                    <p class="txt_encriptado" readonly></p>                 
+                    <p class="msg_vacio"> Ningún mensaje fue encontrado</p>
+                    <p class="info_txt"> Ingresa el texto que desees encriptar o desencriptar.</p>               
+                    <button class = "boton_copiar">Copiar</button>     
+                </div>
+
+            </section>
+            <section class="botones">
+                <div class="caja_restriccion_letras">
+                    <img src="exclamation.png" alt="simbolo_exclamacion" class="simbolo_exclamacion">
+                    <p class = "restriccion-letras">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class = "caja_botones_encriptar">
+                    <button class="boton_encriptar">Encriptar</button>
+                    <button class="boton_desencriptar">Desencriptar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class = "hecho_por">
+                <p class="txtFooter">2022 © Copyright by Alura Latam. Developed by <a href="mailto:boer.pablo@gmail.com">Pablo Boer</a> </p>
+                <a href="https://www.linkedin.com/in/pablo-boer-snm" ><img src="LinkedIn_icon.svg.png" alt="logo_linkedin" height="20px" width="20px" class="linkedin"></a>
+                <a href="https://www.github.com/pabloboer" ><img src="github.png" alt="logo_github" height="20px" width="20px" class="linkedin"></a>
+            </div>
+
+
+        </footer>
+    </body>
+    <script src="encriptar.js"></script>
+ 
+</html>
