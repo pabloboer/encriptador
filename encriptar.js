@@ -124,6 +124,8 @@
                 /* Ocultar imagen */
                 /*let imagenMuñeco = document.querySelector(".Muñeco");
                 imagenMuñeco.style.display="none";*/
+                botonCopiar.style.margin="23.5rem 4.5rem auto auto"
+                botonCopiar.style.display="block";
             }
 
             if (mediaQueryCel.matches) {

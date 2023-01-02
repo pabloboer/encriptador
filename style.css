@@ -475,27 +475,8 @@ footer{
         margin: 9.25rem 0 0 2.5rem;
     }
    
-    .hecho_por{
-        height: 2.5rem;
-        width: 100%;
-        
-        background: #0A3871;   
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        color: #F3F5FC;
-        text-align: center;    
-        padding: 0.1em;
-        /*border-radius: 20px;*/
-        /*background:linear-gradient(#F3F5FC,#0A3871) ;*/
-    }
-    
-    .hecho_por p{
-        margin: 1rem;
-    }
-
 }
+
 @media screen and (max-width:375px){
     body{
         width: 23.44em;
@@ -637,26 +618,10 @@ footer{
     
     footer{
         width: 100%;
-        display: block;      
+        display: block;
     }
-    .hecho_por{
-        height: 2.5rem;
-        width: 100%;
-        position: relative;
-        margin: 0 0;
-        background: #0A3871;   
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        color: #F3F5FC;
-        text-align: center;    
-        padding: 0.1em;
-        /*border-radius: 20px;*/
-        /*background:linear-gradient(#F3F5FC,#0A3871) ;*/
-    }
-    
-    .hecho_por p{
-        margin: 1rem;
+
+    .txtFooter{
+        width: 19rem;
     }
 }
