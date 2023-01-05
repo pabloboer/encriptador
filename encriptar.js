@@ -52,24 +52,30 @@
         */
         
         function encriptar(){ 
+            let pattern=/^[a-z]+$/;
             if(txtIngresado.value =="" || txtIngresado.value== null){
                 txtEncriptado.innerHTML="";
                 vistaOriginal();
             }
-            else{   
-                nuevaVista();
+            else{  
+                if (pattern.test(txtIngresado.value)){
+                    nuevaVista();
 
-                let arrTxtEncriptado =[];            
-                arrTxtEncriptado.push(txtIngresado.value);
-                
-                let strTxtEncriptado=arrTxtEncriptado.join();
-                strTxtEncriptado=strTxtEncriptado.replaceAll("e","enter");
-                strTxtEncriptado=strTxtEncriptado.replaceAll("i","imes");
-                strTxtEncriptado=strTxtEncriptado.replaceAll("a","ai");
-                strTxtEncriptado=strTxtEncriptado.replaceAll("o","ober");
-                strTxtEncriptado=strTxtEncriptado.replaceAll("u","ufat");
-                txtEncriptado.innerHTML=strTxtEncriptado;
-                txtIngresado.value ="";                
+                    let arrTxtEncriptado =[];            
+                    arrTxtEncriptado.push(txtIngresado.value);
+                    
+                    let strTxtEncriptado=arrTxtEncriptado.join();
+                    strTxtEncriptado=strTxtEncriptado.replaceAll("e","enter");
+                    strTxtEncriptado=strTxtEncriptado.replaceAll("i","imes");
+                    strTxtEncriptado=strTxtEncriptado.replaceAll("a","ai");
+                    strTxtEncriptado=strTxtEncriptado.replaceAll("o","ober");
+                    strTxtEncriptado=strTxtEncriptado.replaceAll("u","ufat");
+                    txtEncriptado.innerHTML=strTxtEncriptado;
+                    txtIngresado.value ="";                
+                }
+                else{
+                    alert("Formato no válido");
+                }
             }
         }
         
